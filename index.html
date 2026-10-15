@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h2>My To-Do List</h2>
+    <!--Task Input-->
+    <input type="text" id="taskinput" placeholder="Enter a task">
+    
+    <!--Add Button-->
+    <button onclick="addTask()">Add Task</button>
+    <br><br>
+
+    <!--Filter Buttons-->
+    <button onclick="showTask('all')">All</button>
+    <button onclick="showTask('active')">Active</button>
+    <button onclick="showTask('completed')">Completed</button>
+
+    <h3>Tasks</h3>
+
+    <!--Task List-->
+    <ul id="tasklist"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
